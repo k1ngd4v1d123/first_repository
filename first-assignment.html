@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Mall</title>
+    <style>
+      @import"first-assignment.css";
+      @import"header.css";
+      @import"nav-side-bar.css";
+      @import"main.css";
+    </style>
+    <script src="interactivity.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="Frame 10.png" class="logo"/>
+      </div>
+      <div class="welcome">
+        <h1>Welcome To The Shopper League</h1>
+      </div>
+      <div class="cart-icon-container">
+        <p class="cart-items"></p>
+        <img class="cart-icon" src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png"/>
+        <p>Cart</p>
+      </div>
+    </header>
+
+    <nav>
+      <div class="nav-bar-component">
+        <button class="nav-bar-button" title="Back to home page">
+          <a href="http://localhost/web-tech-project/home.php">
+            <img class="nav-bar-image" src="home.png"/>
+          </a>
+        </button>
+        <p>Home</p>
+      </div>
+
+      <div class="nav-bar-component">
+        <button class="nav-bar-button" title="Snickers">
+            <a href="snickers.php"> 
+              <img class="nav-bar-image" src="https://img.freepik.com/premium-vector/design-drag-race-shoes-with-gravis-racing-vector-motif_712527-1373.jpg?uid=R197936110&ga=GA1.1.112241239.1745845760&semt=ais_hybrid&w=740"/> 
+            </a>
+        </button>
+        <p>Snickers</p>
+      </div>
+
+      <div class="nav-bar-component">
+        <button class="nav-bar-button" title="Jerseys">
+            <a href="jerseys.php"> 
+              <img class="nav-bar-image" src="https://img.freepik.com/premium-vector/highperformance-basketball-apparel-designs-unique-sublimated-basketball-shorts-graphics_29096-5843.jpg?uid=R197936110&ga=GA1.1.112241239.1745845760&semt=ais_hybrid&w=740"/>
+            </a>
+        </button>
+        <p>Jerseys</p>
+      </div>
+
+      <div class="nav-bar-component"> 
+        <button class="nav-bar-button" title="Others">
+            <a href ="balls.php">
+              <img class="nav-bar-image" src="https://img.freepik.com/free-vector/basketball-logo-orange-ball_78370-1101.jpg?uid=R197936110&ga=GA1.1.112241239.1745845760&semt=ais_hybrid&w=740"/>
+            </a>
+        </button>
+        <p>Balls</p>
+      </div>
+
+      <div class="nav-bar-component"> 
+        <button class="nav-bar-button" title="Others">
+            <a href ="sporting-equipment.php">
+              <img class="nav-bar-image" src="https://img.freepik.com/premium-vector/vector-sports-bag_733406-1064.jpg?uid=R197936110&ga=GA1.1.112241239.1745845760&semt=ais_hybrid&w=740"/>
+            </a>
+        </button>
+        <p>Equipment</p>
+      </div>
+    </nav>
+
+    <main>
+
+     <div class="product-area">
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/premium-vector/design-drag-race-shoes-with-gravis-racing-vector-motif_712527-1373.jpg?uid=R197936110&ga=GA1.1.112241239.1745845760&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Comfy Snickers</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/premium-photo/black-white-nike-shoe-with-logo-front_1156615-2843.jpg?uid=R197936110&ga=GA1.1.112241239.1745845760&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Nike Air Jordans</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/free-photo/shoes_1203-8152.jpg?uid=R197936110&ga=GA1.1.112241239.1745845760&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Casual Jordans</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/premium-photo/sport-running-shoes-sneakers-mockup-3d-illustration-3d-rendering_941097-22054.jpg?uid=R197936110&ga=GA1.1.112241239.1745845760&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Puma Air Jordans</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/free-photo/fashion-shoes-sneakers_1203-7529.jpg?ga=GA1.1.1051289515.1747309995&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Easy fit </p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/free-psd/running-shoes-sneakers-transparent-background_84443-1641.jpg?ga=GA1.1.1051289515.1747309995&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Bumble-bee</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/premium-photo/pair-new-brown-leather-waterproof-sneakers-isolated-white-background-orange-shoelace_143092-9525.jpg?ga=GA1.1.1051289515.1747309995&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Rugged snickers</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/premium-photo/sports-shoe_20243-266.jpg?ga=GA1.1.1051289515.1747309995&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Joggables</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/free-photo/view-football-shoes_23-2150885782.jpg?ga=GA1.1.1051289515.1747309995&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Vintage Boots</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/free-photo/soccer-game-concept_23-2151043748.jpg?ga=GA1.1.1051289515.1747309995&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>El Classico</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/premium-photo/red-football-shoes_9083-10672.jpg?ga=GA1.1.1051289515.1747309995&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Comfy Boots</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <img class="product-image" src="https://img.freepik.com/free-photo/white-black-soccer-shoes-are-laying-grass_23-2151909694.jpg?ga=GA1.1.1051289515.1747309995&semt=ais_hybrid&w=740">
+            <div class="price">
+              <p>Rugged Boots</p>
+              <p>$300</p>
+              <button class="purchase" onclick="AddToCart();">Add To Cart</button>
+            </div>
+          </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <h1>King David &copy 2025</h1>
+    </footer>
+  </body>
+</html>

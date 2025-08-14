@@ -1,0 +1,18 @@
+*{
+  font-family: courier;
+}
+
+body{
+  background: #DAD4D4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  margin: 0;
+}
+
+p{
+  font-size: 16px;
+  display: inline-block;
+}
